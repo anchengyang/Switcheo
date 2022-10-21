@@ -8,22 +8,42 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 
-<body>
-
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
-    <label for="input-address">ETH Address</label>
-    <input id="input-address" />
-
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
-
-    <label for="input-otp">OTP Authentication</label>
-    <input type="number" id="input-otp" />
-
-    <button>SEND TOKENS</button>
-  </form>
-  <script src="script.js"></script>
+<body class="dark-theme">
+  <div class="center">
+    <h1>Transaction form</h1>
+  
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <form onsubmit="return !1">
+      <div class="text_box">
+        <input id="input-address" required/>
+        <span></span>
+        <label for="input-address">ETH Address</label>
+        
+      </div>
+      <div class="text_box">
+        <input id="input-amount" required/>
+        <span></span>
+        <label for="input-amount">Amount to send</label>
+        
+      </div>
+      <div class="text_box">
+        <input type="number" id="input-otp" required/>
+        <span></span>
+        <label for="input-otp">OTP Authentication</label>
+        
+      </div>
+      <script src="script.js"></script>
+      <p>
+        <button type="submit" class="button" onclick="openPopup()">SEND TOKENS</button>
+      </p>
+      <div class="popup" id="popup">
+        <h2>Success</h2>
+        <p>Your transaction is completed!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+      
+    </form>    
+  </div>
 </body>
 
 </html>
