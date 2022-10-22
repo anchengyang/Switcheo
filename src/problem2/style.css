@@ -3,25 +3,27 @@ body {
   flex-direction: row;
   margin:auto;
   justify-content: center;
-  max-width: 460px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3vmin;
+  font-size: 1em;
   background: linear-gradient(120deg, #193B4D, #0ec585);
   color: #193B4D;
-  overflow: hidden;
+  overflow: auto;
+
 }
 .center{
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
   background: white;
   border-radius: 10px;
+  overflow: auto;
 }
 .center form{
   padding: 0 10%;
   box-sizing: border-box;
+  overflow: auto;
 }
 form .text_box{
   position: relative;
@@ -31,7 +33,7 @@ form .text_box{
 }
 .text_box input{
   padding: 0 5px;
-  font-size: 3vmin;
+  font-size: 1em;
   height: 40px;
   border: none;
   /* border-radius: 15px; */
@@ -78,6 +80,7 @@ form .text_box{
   font-weight: bold;
   font-family: Helvetica;
   border-bottom: 1px solid silver;
+  overflow: auto;
 }
 
 .button{
@@ -89,7 +92,7 @@ form .text_box{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5vw;
+  font-size: 1em;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
