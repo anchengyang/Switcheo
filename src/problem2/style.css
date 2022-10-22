@@ -3,19 +3,19 @@ body {
   flex-direction: row;
   margin:auto;
   justify-content: center;
-  max-width: 360px;
+  max-width: 460px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5vw;
+  font-size: 3vmin;
   background: linear-gradient(120deg, #193B4D, #0ec585);
   color: #193B4D;
   overflow: hidden;
 }
 .center{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 50vw;
   background: white;
   border-radius: 10px;
 }
@@ -31,7 +31,7 @@ form .text_box{
 }
 .text_box input{
   padding: 0 5px;
-  font-size: 1.5vw;
+  font-size: 3vmin;
   height: 40px;
   border: none;
   /* border-radius: 15px; */
@@ -113,9 +113,9 @@ form .text_box{
   color:#E2FCA4;
 }
 .popup{
-  width: 50%;
+  width: 50vmin;
   background: white;
-  border-radius: 10%;
+  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -134,7 +134,7 @@ form .text_box{
   transform:translate(-50%, -50%) scale(1);
 }
 .popup h2{
-  font-size: 38px;
+  font-size: 5vmin;
   font-weight: bold;
   margin: 30px 0 10px;
 }
@@ -146,7 +146,7 @@ form .text_box{
   color: #193B4D;
   border: 0;
   outline: none;
-  font-size: 18px;
+  font-size: 5vmin;
   border-radius:15px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);

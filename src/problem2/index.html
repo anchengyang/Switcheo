@@ -6,6 +6,7 @@
 
   <!-- You may add more stuff here -->
   <link href="style.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
 </head>
 
 <body class="dark-theme">
@@ -13,7 +14,9 @@
     <h1>Transaction form</h1>
   
     <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-    <form onsubmit="return !1">
+    <div id="error"></div>
+    <!-- onsubmit="return validation()" -->
+    <form id="form">
       <div class="text_box">
         <input id="input-address" required/>
         <span></span>
@@ -21,9 +24,9 @@
         
       </div>
       <div class="text_box">
-        <input id="input-amount" required/>
+        <input type="number" step="0.00001" min="0" id="input-amount" required/>
         <span></span>
-        <label for="input-amount">Amount to send</label>
+        <label for="input-amount">Amount to send, up to 5 d.p.</label>
         
       </div>
       <div class="text_box">
@@ -32,9 +35,9 @@
         <label for="input-otp">OTP Authentication</label>
         
       </div>
-      <script src="script.js"></script>
+      <!-- <script src="script.js"></script> -->
       <p>
-        <button type="submit" class="button" onclick="openPopup()">SEND TOKENS</button>
+        <button type="submit" class="button">SEND TOKENS</button>
       </p>
       <div class="popup" id="popup">
         <h2>Success</h2>
